@@ -1,18 +1,20 @@
-#!/usr/bin/python3
-"""Module to find the max integer in a list
-"""
+#include "main.h"
 
+/**
+ *_abs-prints the absolute value of an integer.
+ *@a:the integer to compute its absolute value.
+ *Return:returns the abs value.
+ *
+ */
+int _abs(int a)
+{
+	int k = a;
+	int absvalue;
 
-def max_integer(list=[]):
-    """Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
-    """
-    if len(list) == 0:
-        return None
-    result = list[0]
-    i = 1
-    while i < len(list):
-        if list[i] > result:
-            result = list[i]
-        i += 1
-    return result
+	if (k < 0)
+	{
+		k = k * (-1);
+	}
+	absvalue = k;
+	return (absvalue);
+}
